@@ -9,7 +9,6 @@
 <body>
     <header>
         <div class="top-bar">
-            <input type="text" placeholder="search" class="search-bar">
             <nav>
                 <ul>
                     <li><a href="#" class="active">home</a></li>
@@ -18,24 +17,41 @@
                     <li><a href="#">shop</a></li>
                 </ul>
             </nav>
-            <button class="contact-btn">Contact Us</button>
+            <div class="search-container">
+                <input type="text" placeholder="search" class="search-bar">
+            </div>
+            <button class="contact-btn">Contact Us</button> 
         </div>
         <div class="logo">
-            <h1>HUNTHRIFT</h1>
+            <h1>HunThrift</h1>
         </div>
-    </header>
+    </header>    
 
     <main>
         <section class="hero">
-            <h2>Find Your Sense <br>in clothes</h2>
-            <div class="gallery">
-                <img src="image1.jpg" alt="Image 1">
-                <img src="image2.jpg" alt="Image 2">
-                <img src="image3.jpg" alt="Image 3">
+            <h2>Find Your Sense <br> in clothes</h2>
+        
+            <!-- Carousel Section -->
+            <div class="carousel-container">
+                <div class="carousel">
+                <button class="prev">&#10094;</button>
+                    <img src="images/image1.png" alt="Image 1">
+                    <img src="images/image2.png" alt="Image 2">
+                    <img src="images/image3.png" alt="Image 3">
+                <button class="next">&#10095;</button>
+                </div>
             </div>
+        
+            <!-- Main image under carousel -->
             <div class="main-image">
-                <img src="main-image.jpg" alt="Main Model">
+                <img src="images/image4.png" alt="Main Model">
             </div>
+        </section>
+
+        <!-- Bagian About -->
+        <section id="about" class="about"> 
+            <h2>About Hunthrift</h2>
+            <p>Hunthrift is a platform where you can find your unique style through thrifted clothing.</p>
         </section>
     </main>
 
