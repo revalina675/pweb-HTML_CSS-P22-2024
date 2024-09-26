@@ -86,24 +86,65 @@ nav ul li a.active, nav ul li a:hover {
     font-size: 36px;
 }
 
-.about-section {
+.catalog {
     display: flex;
     justify-content: center; 
     align-items: center; 
-    min-height: 100vh; 
-    position: relative; 
+    flex-direction: column; 
+}
+
+.catalog h1 {
+    text-align: center; 
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px auto;
+}
+
+.product-item {
+    width: 200px;
     text-align: center;
-    background-color: #f5f0e7;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
 }
 
-.about-content {
-    z-index: 1; 
-    max-width: 800px; 
-    padding: 20px;
+.product-item:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
-.icon img {
-    width: 300px; 
+.product-item img {
+    width: 100%;
     height: auto;
-    margin-bottom: 20px;
+}
+
+.color-options {
+    margin: 10px 0;
+}
+
+.color {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+}
+
+.color.blue {
+    background-color: blue;
+}
+
+.color.beige {
+    background-color: beige;
+}
+
+.color.brown {
+    background-color: brown;
 }
