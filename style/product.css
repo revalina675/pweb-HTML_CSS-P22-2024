@@ -1,3 +1,4 @@
+/* Style Umum */
 * {
     margin: 0;
     padding: 0;
@@ -18,15 +19,9 @@ header {
 
 .top-bar {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
     padding-bottom: 10px;
-}
-
-nav {
-    display: flex;
-    justify-content: flex-start; 
-    flex-grow: 1;
 }
 
 nav ul {
@@ -51,15 +46,15 @@ nav ul li a.active, nav ul li a:hover {
 
 .search-container {
     display: flex;
-    justify-content: center; 
-    margin: 10px 20px; 
+    justify-content: center;
+    margin: 10px 20px;
 }
 
 .search-bar {
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    max-width: 300px; 
+    max-width: 300px;
 }
 
 .contact-btn {
@@ -86,42 +81,54 @@ nav ul li a.active, nav ul li a:hover {
     font-size: 36px;
 }
 
+/* CATALOG SECTION */
 .catalog {
     display: flex;
-    justify-content: center; 
-    align-items: center; 
-    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .catalog h1 {
-    text-align: center; 
+    text-align: center;
 }
 
 .product-list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
     margin: 20px auto;
+    max-width: 1200px;
 }
 
 .product-item {
-    width: 200px;
-    text-align: center;
+    width: 100%;
     border: 1px solid #ddd;
-    padding: 10px;
+    padding: 15px;
     background-color: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transisi untuk scaling card */
 }
 
 .product-item:hover {
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05); /* Hanya card yang membesar */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Efek shadow saat hover */
 }
 
 .product-item img {
     width: 100%;
-    height: auto;
+    height: auto; /* Tinggi gambar otomatis */
+    object-fit: contain; /* Memastikan gambar tidak terpotong */
+    transition: none; /* Hapus transisi dari gambar */
+}
+
+/* Style untuk nama dan harga produk */
+.product-name,
+.product-price {
+    color: #333;
+    text-decoration: none;
+    font-weight: normal;
+    margin: 10px 0;
 }
 
 .color-options {
@@ -147,4 +154,14 @@ nav ul li a.active, nav ul li a:hover {
 
 .color.brown {
     background-color: brown;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .product-item {
+        padding: 20px;
+    }
+    .product-list {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
 }
