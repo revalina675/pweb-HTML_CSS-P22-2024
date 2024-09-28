@@ -139,3 +139,30 @@ body {
   border-radius: 9px;
   font-size: 14px;
 }
+
+.comment-form {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.comment-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex: 1;
+  margin-right: 10px;
+}
+
+.comment-form button {
+  padding: 10px 20px;
+  background-color: #2e2e2e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.comment-form button:hover {
+  background-color: #666;
+}
