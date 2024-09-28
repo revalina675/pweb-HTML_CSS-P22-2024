@@ -112,7 +112,8 @@ nav ul li a:hover {
 
 .logo h1 {
   color: #5c4636;
-  font-size: 36px;
+  font-size: 75px;
+  padding-top: 100px;
 }
 
 main {
