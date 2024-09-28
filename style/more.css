@@ -166,3 +166,8 @@ body {
 .comment-form button:hover {
   background-color: #666;
 }
+
+.spc {
+  width: none;
+  height: none;
+}
