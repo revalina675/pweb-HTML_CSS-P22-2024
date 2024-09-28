@@ -158,11 +158,27 @@ nav ul li a.active, nav ul li a:hover {
     background-color: #917c5e;
 }
 
-/* FOOTER */
 footer {
-    text-align: center;
+    background-color: #8b705a;
     padding: 20px;
-    background-color: #e1d0b8;
-    color: #5c4636;
-    font-size: 16px;
+    color: black;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a img {
+    margin: 0 10px;
+}
+
+footer a img:hover {
+    opacity: 0.7;
 }
