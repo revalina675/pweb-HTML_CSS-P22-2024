@@ -153,15 +153,15 @@ nav ul li a.active, nav ul li a:hover {
 }
 
 .color.blue {
-    background-color: blue;
+    background-color: #495875;
 }
 
 .color.beige {
-    background-color: beige;
+    background-color: #b29b82;
 }
 
 .color.brown {
-    background-color: brown;
+    background-color: #2e2e2e;
 }
 
 /* Responsif untuk layar kecil */
