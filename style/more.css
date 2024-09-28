@@ -171,3 +171,22 @@ body {
   width: none;
   height: none;
 }
+
+.buy-button {
+  background-color: #406541; /* Green background */
+  border: none; /* Remove default border */
+  color: white; /* White text color */
+  padding: 10px 20px; /* Padding for button size */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove text underline */
+  display: inline-block; /* Inline display */
+  font-size: 16px; /* Font size */
+  margin: 10px 0; /* Space around the button */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.buy-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
