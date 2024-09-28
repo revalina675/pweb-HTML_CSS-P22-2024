@@ -173,3 +173,12 @@ nav ul li a.active, nav ul li a:hover {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 }
+
+.product-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.product-item a:hover {
+    text-decoration: none;
+}
