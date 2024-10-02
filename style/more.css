@@ -17,7 +17,7 @@ body {
   padding: 20px;
   height: 100vh;
   gap: 40px;
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  flex-wrap: wrap; 
 }
 
 .image-section {
@@ -88,7 +88,7 @@ body {
 .color-circle {
   display: inline-block;
   margin-top: 10px;
-  width: 30px; /* Make color circles slightly larger */
+  width: 30px; 
   height: 30px;
   border-radius: 50%;
   border: 1px solid #ccc;
@@ -173,20 +173,20 @@ body {
 }
 
 .buy-button {
-  background-color: #406541; /* Green background */
-  border: none; /* Remove default border */
-  color: white; /* White text color */
-  padding: 10px 20px; /* Padding for button size */
-  text-align: center; /* Center the text */
-  text-decoration: none; /* Remove text underline */
-  display: inline-block; /* Inline display */
-  font-size: 16px; /* Font size */
-  margin: 10px 0; /* Space around the button */
-  cursor: pointer; /* Pointer cursor on hover */
-  border-radius: 5px; /* Rounded corners */
-  transition: background-color 0.3s ease; /* Smooth hover transition */
+  background-color: #406541; 
+  border: none; 
+  color: white;
+  padding: 10px 20px; 
+  text-align: center;
+  text-decoration: none; 
+  display: inline-block; 
+  font-size: 16px; 
+  margin: 10px 0; 
+  cursor: pointer; 
+  border-radius: 5px; 
+  transition: background-color 0.3s ease; 
 }
 
 .buy-button:hover {
-  background-color: #45a049; /* Darker green on hover */
+  background-color: #45a049; 
 }

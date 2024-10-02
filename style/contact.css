@@ -36,7 +36,6 @@ header {
     flex-grow: 1;
   }
   
-  /* NEW CLASS: Right section */
   .right-items {
     display: flex;
     justify-content: flex-end;

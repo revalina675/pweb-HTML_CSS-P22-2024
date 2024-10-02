@@ -8,7 +8,7 @@ body {
   font-family: "Arial", sans-serif;
   color: #333;
   background-color: #f5f0e7;
-  padding-top: 70px; /* Prevent content from hiding under the fixed header */
+  padding-top: 70px; 
 }
 
 header {
@@ -30,14 +30,12 @@ header {
   margin: 0 auto;
 }
 
-/* NEW CLASS: Left section */
 .left-items {
   display: flex;
   justify-content: flex-start;
   flex-grow: 1;
 }
 
-/* NEW CLASS: Right section */
 .right-items {
   display: flex;
   justify-content: flex-end;
@@ -146,22 +144,22 @@ nav ul li a:hover {
   padding: 15px;
   background-color: #fff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transisi untuk scaling card */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .product-item:hover {
-  transform: scale(1.05); /* Hanya card yang membesar */
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Efek shadow saat hover */
+  transform: scale(1.05); 
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .product-item img {
   width: 100%;
-  height: auto; /* Tinggi gambar otomatis */
-  object-fit: contain; /* Memastikan gambar tidak terpotong */
-  transition: none; /* Hapus transisi dari gambar */
+  height: auto;
+  object-fit: contain; 
+  transition: none; 
 }
 
-/* Style untuk nama dan harga produk */
+/* Style nama dan harga produk */
 .product-name,
 .product-price {
   color: #333;
@@ -195,7 +193,7 @@ nav ul li a:hover {
   background-color: #2e2e2e;
 }
 
-/* Responsif untuk layar kecil */
+/* # Responsif */
 @media (max-width: 768px) {
   .product-item {
     padding: 20px;
